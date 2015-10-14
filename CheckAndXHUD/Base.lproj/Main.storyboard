@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9yY-rO-mEf">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="hI1-vQ-KFn">
+            <objects>
+                <viewController id="9yY-rO-mEf" customClass="ViewController" customModule="DoneHUD" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Wau-jm-qTG"/>
+                        <viewControllerLayoutGuide type="bottom" id="yPM-mz-ciu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bBB-FT-ckZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mtF-bm-HIt">
+                                <rect key="frame" x="210" y="77" width="180" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="OJt-wu-8Vi"/>
+                                    <constraint firstAttribute="width" constant="180" id="e7l-Qj-W4N"/>
+                                </constraints>
+                                <state key="normal" title="Show check">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showButtonWasTapped" destination="9yY-rO-mEf" eventType="touchUpInside" id="NmO-96-j8A"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0Y-AO-xZ1">
+                                <rect key="frame" x="210" y="315" width="180" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="Kc7-Ez-AI7"/>
+                                    <constraint firstAttribute="height" constant="30" id="Tzs-3N-MqU"/>
+                                </constraints>
+                                <state key="normal" title="Show X"/>
+                                <connections>
+                                    <action selector="showXButtonWasTapped:" destination="9yY-rO-mEf" eventType="touchUpInside" id="ogh-lN-wgi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mg0-Gr-Pd7">
+                                <rect key="frame" x="210" y="421" width="180" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3Ae-MW-zw3"/>
+                                    <constraint firstAttribute="width" constant="180" id="kBQ-eC-K3W"/>
+                                </constraints>
+                                <state key="normal" title="Show X with message"/>
+                                <connections>
+                                    <action selector="showXWithMessageButtonWasTapped:" destination="9yY-rO-mEf" eventType="touchUpInside" id="qXf-if-mrK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ptL-db-hdk">
+                                <rect key="frame" x="201" y="163" width="198" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Ksf-4I-NJf"/>
+                                    <constraint firstAttribute="width" constant="198" id="u4y-8q-tbW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Show check with message">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showWithMessageButtonWasTapped" destination="9yY-rO-mEf" eventType="touchUpInside" id="J5k-J5-0hi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="mtF-bm-HIt" secondAttribute="centerX" id="12a-Gg-Nbs"/>
+                            <constraint firstItem="mg0-Gr-Pd7" firstAttribute="centerX" secondItem="bBB-FT-ckZ" secondAttribute="centerX" id="44s-Ii-H7i"/>
+                            <constraint firstItem="mg0-Gr-Pd7" firstAttribute="centerY" secondItem="bBB-FT-ckZ" secondAttribute="centerY" constant="136" id="53V-Je-ZtL"/>
+                            <constraint firstAttribute="centerY" secondItem="ptL-db-hdk" secondAttribute="centerY" constant="122" id="ctl-P3-pXH"/>
+                            <constraint firstItem="g0Y-AO-xZ1" firstAttribute="centerX" secondItem="bBB-FT-ckZ" secondAttribute="centerX" id="dFq-9Z-eYG"/>
+                            <constraint firstAttribute="centerY" secondItem="mtF-bm-HIt" secondAttribute="centerY" constant="208" id="gUy-mD-rdn"/>
+                            <constraint firstAttribute="centerX" secondItem="ptL-db-hdk" secondAttribute="centerX" id="oKl-4v-RbZ"/>
+                            <constraint firstItem="g0Y-AO-xZ1" firstAttribute="centerY" secondItem="bBB-FT-ckZ" secondAttribute="centerY" constant="30" id="sJZ-Jk-XY6"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gzi-Yb-SjQ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="265"/>
+        </scene>
+    </scenes>
+</document>
