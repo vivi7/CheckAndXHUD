@@ -30,11 +30,11 @@ class ViewController: UIViewController {
         CheckAndXHUD.showCheckInView(self.view, message: "Done")
     }
     
-    @IBAction func showXButtonWasTapped(sender: UIButton) {
+    @IBAction func showXButtonWasTapped(_ sender: UIButton) {
         CheckAndXHUD.showXInView(self.view)
     }
     
-    @IBAction func showXWithMessageButtonWasTapped(sender: UIButton) {
+    @IBAction func showXWithMessageButtonWasTapped(_ sender: UIButton) {
         CheckAndXHUD.showXInView(self.view, message: "Wrong")
     }
 

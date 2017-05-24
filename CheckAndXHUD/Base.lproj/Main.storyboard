@@ -1,38 +1,40 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9yY-rO-mEf">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9yY-rO-mEf">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="hI1-vQ-KFn">
             <objects>
-                <viewController id="9yY-rO-mEf" customClass="ViewController" customModule="DoneHUD" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9yY-rO-mEf" customClass="ViewController" customModule="CheckAndXHUD" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Wau-jm-qTG"/>
                         <viewControllerLayoutGuide type="bottom" id="yPM-mz-ciu"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="bBB-FT-ckZ">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mtF-bm-HIt">
-                                <rect key="frame" x="210" y="77" width="180" height="30"/>
-                                <animations/>
+                                <rect key="frame" x="97.5" y="110.5" width="180" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="OJt-wu-8Vi"/>
                                     <constraint firstAttribute="width" constant="180" id="e7l-Qj-W4N"/>
                                 </constraints>
                                 <state key="normal" title="Show check">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="showButtonWasTapped" destination="9yY-rO-mEf" eventType="touchUpInside" id="NmO-96-j8A"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0Y-AO-xZ1">
-                                <rect key="frame" x="210" y="315" width="180" height="30"/>
-                                <animations/>
+                                <rect key="frame" x="97.5" y="348.5" width="180" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="180" id="Kc7-Ez-AI7"/>
                                     <constraint firstAttribute="height" constant="30" id="Tzs-3N-MqU"/>
@@ -43,8 +45,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mg0-Gr-Pd7">
-                                <rect key="frame" x="210" y="421" width="180" height="30"/>
-                                <animations/>
+                                <rect key="frame" x="97.5" y="454.5" width="180" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="3Ae-MW-zw3"/>
                                     <constraint firstAttribute="width" constant="180" id="kBQ-eC-K3W"/>
@@ -55,23 +56,21 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ptL-db-hdk">
-                                <rect key="frame" x="201" y="163" width="198" height="30"/>
-                                <animations/>
+                                <rect key="frame" x="88.5" y="196.5" width="198" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Ksf-4I-NJf"/>
                                     <constraint firstAttribute="width" constant="198" id="u4y-8q-tbW"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="Show check with message">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="showWithMessageButtonWasTapped" destination="9yY-rO-mEf" eventType="touchUpInside" id="J5k-J5-0hi"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <animations/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="mtF-bm-HIt" secondAttribute="centerX" id="12a-Gg-Nbs"/>
                             <constraint firstItem="mg0-Gr-Pd7" firstAttribute="centerX" secondItem="bBB-FT-ckZ" secondAttribute="centerX" id="44s-Ii-H7i"/>
