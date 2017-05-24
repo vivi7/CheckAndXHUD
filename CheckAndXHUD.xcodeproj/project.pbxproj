@@ -12,8 +12,8 @@
 		4454D7A41BCE904600063B71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4454D7A21BCE904600063B71 /* Main.storyboard */; };
 		4454D7A61BCE904600063B71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4454D7A51BCE904600063B71 /* Assets.xcassets */; };
 		4454D7A91BCE904600063B71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4454D7A71BCE904600063B71 /* LaunchScreen.storyboard */; };
-		4454D7B21BCE911C00063B71 /* CheckAndXHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4454D7B01BCE911C00063B71 /* CheckAndXHUD.swift */; settings = {ASSET_TAGS = (); }; };
-		4454D7B31BCE911C00063B71 /* CheckAndXView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4454D7B11BCE911C00063B71 /* CheckAndXView.swift */; settings = {ASSET_TAGS = (); }; };
+		4454D7B21BCE911C00063B71 /* CheckAndXHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4454D7B01BCE911C00063B71 /* CheckAndXHUD.swift */; };
+		4454D7B31BCE911C00063B71 /* CheckAndXView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4454D7B11BCE911C00063B71 /* CheckAndXView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -109,6 +109,8 @@
 				TargetAttributes = {
 					4454D79A1BCE904600063B71 = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 3YJR8G2GS6;
+						LastSwiftMigration = 0820;
 					};
 				};
 			};
@@ -264,10 +266,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3YJR8G2GS6;
 				INFOPLIST_FILE = CheckAndXHUD/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vinsoft.vivi.CheckAndXHUD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -275,10 +279,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3YJR8G2GS6;
 				INFOPLIST_FILE = CheckAndXHUD/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vinsoft.vivi.CheckAndXHUD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -301,6 +307,7 @@
 				4454D7AF1BCE904600063B71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
