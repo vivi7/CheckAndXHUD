@@ -1,9 +1,10 @@
 # CheckAndXHUD
+Written in swift 3
 
 ## Author 
 
 Favara Vincenzo vin.favara@gmail.com <br>
-Linkedin: http://www.linkedin.com/profile/view?id=104791601
+Linkedin: https://www.linkedin.com/in/vincenzofavara
 
 
 This library is maked with the template of DoneHUD: https://github.com/beryu/DoneHUD
@@ -11,8 +12,8 @@ This library is maked with the template of DoneHUD: https://github.com/beryu/Don
 
 ## Requirements
 
-- iOS 8.0+ 
-- Xcode 7
+- iOS 9.0+ 
+- Xcode 8
 
 ## Installation
 
@@ -30,7 +31,7 @@ To integrate Google Material Design Colors into your Xcode project using CocoaPo
 
 ```ruby
 source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '8.0'
+platform :ios, '9.0'
 use_frameworks!
 
 pod 'CheckAndXHUD'
